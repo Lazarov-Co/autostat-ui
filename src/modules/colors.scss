@@ -1,0 +1,76 @@
+// Colors
+//
+// Background, text and active state colors
+//
+// Styleguide Colors
+
+// Background Colors
+//
+// $bg-darkgrey - #333333; Dark Grey
+// $bg-grey - #c9c9c9; Grey
+// $bg-lightgrey - #f2f2f2; Light Grey
+//
+// Styleguide Colors.Backgrounds
+$bg-darkgrey:   #333333;
+$bg-grey:       #c9c9c9;
+$bg-lightgrey:  #f2f2f2;
+
+// Background Utilities
+//
+// `.bg-black`
+// `.bg-darkgrey`
+// `.bg-grey`
+// `.bg-lightgrey`
+// `.bg-white`
+//
+// Styleguide Colors.Backgrounds
+.bg-black     { background-color: black; }
+.bg-darkgrey  { background-color: $bg-darkgrey; }
+.bg-grey      { background-color: $bg-grey; }
+.bg-lightgrey { background-color: $bg-lightgrey; }
+.bg-white     { background-color: white; }
+  
+// Inactive Colors
+//
+// $inactive-prim - #163146; Primary
+// $inactive-sec - #333333; Secondary
+//
+// Styleguide Colors.Inactive
+$inactive-prim: #163146;
+$inactive-sec: #333333;
+
+// Inactive Color Utilities
+//
+// `.c-black`
+// `.c-prim`
+// `.c-sec`
+// `.c-white`
+//
+// Styleguide Colors.Inactive
+.c-black  { color: black; }
+.c-prim   { color: $inactive-prim; }
+.c-sec    { color: $inactive-sec; }
+.c-white  { color: white; }
+  
+// Active Colors
+//
+// $active-prim - #DF7700; Primary
+// $active-sec - #17476B; Secondary
+//
+// Styleguide Colors.Active
+$active-prim: #DF7700;
+$active-sec: #17476B;
+
+// Active Color Utilities
+//
+// `.c-active-prim`
+// `.c-active-sec`
+// `.bg-active-prim`
+// `.bg-active-sec`
+//
+// Styleguide Colors.Active
+.c-active-prim { color: $active-prim; }
+.c-active-sec  { color: $active-sec; }
+
+.bg-active-prim { background-color: $active-prim; }
+.bg-active-sec  { background-color: $active-sec; }

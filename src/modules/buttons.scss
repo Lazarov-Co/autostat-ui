@@ -1,0 +1,39 @@
+// Button
+//
+// Markup:
+// <a class="Btn" href="#">Primary Button</a>
+// <a class="Btn Btn--sec" href="#">Secondary Button</a>
+//
+// Styleguide Button
+
+.Btn {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 14px 42px 13px;
+  transition: 0.2s all;
+  color: #fff;
+  background-color: $active-prim;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    opacity: 0.9;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &--sec {
+    background-color: $active-sec;
+  }
+}

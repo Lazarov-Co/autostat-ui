@@ -1,0 +1,121 @@
+// Table
+//
+// Markup:
+// <table class="Table">
+//   <thead>
+//     <tr>
+//       <th>First Name</th>
+//       <th>Last Name</th>
+//       <th>Age</th>
+//     </tr>
+//   </thead>
+//   <tbody>
+//     <tr>
+//       <td>John</td>
+//       <td>Doe</td>
+//       <td>23</td>
+//     </tr>
+//     <tr>
+//       <td>Ivan</td>
+//       <td>Ivanov</td>
+//       <td>32</td>
+//     </tr>
+//     <tr>
+//       <td>Georgi</td>
+//       <td>Georgiev</td>
+//       <td>33</td>
+//     </tr>
+//   </tbody>
+// </table>
+//
+// Styleguide Tables.Table
+
+.Table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+
+  td, th {
+    padding: 14px 13px 13px;
+    border: 1px solid $bg-grey;
+    border-top: none;
+    border-left: none;
+  }
+
+  th {
+    border-top: 1px solid $bg-grey;
+    background-color: $bg-lightgrey;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  td:first-of-type,
+  th:first-of-type {
+    border-left: 1px solid $bg-grey;
+  }
+
+  th:first-of-type {
+    border-top-left-radius: 5px;
+  }
+
+  th:last-of-type {
+    border-top-right-radius: 5px;
+  }
+
+  tr:last-of-type {
+    td:first-of-type {
+      border-bottom-left-radius: 5px;
+    }
+
+    td:last-of-type {
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
+
+// Table--lite
+//
+// Markup:
+// <table class="Table Table--lite">
+//   <thead>
+//     <tr>
+//       <th>First Name</th>
+//       <th>Age</th>
+//     </tr>
+//   </thead>
+//   <tbody>
+//     <tr>
+//       <td>John</td>
+//       <td>23</td>
+//     </tr>
+//     <tr>
+//       <td>Ivan</td>
+//       <td>32</td>
+//     </tr>
+//     <tr>
+//       <td>Georgi</td>
+//       <td>33</td>
+//     </tr>
+//   </tbody>
+// </table>
+//
+// Styleguide Tables.Table
+.Table--lite {
+  th {
+    background: none;
+  }
+
+  th, td {
+    border-left: none !important;
+    border-top: none !important;
+  }
+
+  th:last-of-type,
+  td:last-of-type {
+    border-right: none;
+  }
+
+  tr:last-of-type td {
+    border-bottom: none;
+  }
+}

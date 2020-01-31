@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,400i,500&display=swap');
+
+// Common
+body {
+  font-size: 18px;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', 'sans-serif';
+  font-weight: 900;
+  margin: 0;
+}
+
+// Headings
+//
+// Size and height are calculated using the Golden Ratio
+//
+// ### References:
+// `https://pearsonified.com/golden-ratio-typography-intro/`<br>
+// `https://grtcalculator.com/`<br>
+//
+// Markup:
+// <h1>Heading 1</h1>
+// <h2>Heading 2</h2>
+// <h3>Heading 3</h3>
+// <h4>Heading 4</h4>
+// <h5>Heading 5</h5>
+// <h6>Heading 6</h6>
+//
+// Styleguide Typography.Headings
+h1 {
+  font-size: 47px;
+  line-height: 76px;
+}
+
+h2 {
+  font-size: 37px;
+  line-height: 62px;
+}
+
+h3 {
+  font-size: 29px;
+  line-height: 50px;
+}
+
+h4 {
+  font-size: 23px;
+  line-height: 41px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 34px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+// Paragraphs
+//
+// Markup:
+// <p>Lorem ipsum dolor sit amet</p>
+//
+// Styleguide Typography.Paragraphs
+p { margin: 1em 0; }
+  
+// Anchors
+//
+// Markup:
+// <p>Lorem ipsum dolor sit <a href="#">amet</a></p>
+//
+// Styleguide Typography.Anchors
+a {
+  text-decoration: none;
+  transition: 0.2s all;
+  color: #0055FF;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
