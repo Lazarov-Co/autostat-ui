@@ -1,0 +1,7 @@
+{
+  "title": "AutoStat UI",
+  "source": "src/",
+  "destination": "docs/",
+  "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
+  "css": [ "../dist/bundle.min.css" ]
+}

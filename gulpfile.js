@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const rename = require("gulp-rename");
+const rename = require('gulp-rename');
+const run = require('gulp-run');
 const del = require('del');
 const cleanCSS = require('gulp-clean-css');
 
@@ -21,6 +22,9 @@ const minify = () => gulp.src('./dist/autostat-ui.css')
     .pipe(cleanCSS())
     .pipe(gulp.dest('dist'));
 
-gulp.task('watch', () => gulp.watch('./src/**/*.scss', gulp.series(compile, renameBundle, clean, minify)));
+const docs = () => gulp.src(['src/**/*.scss'])
+    .pipe(run('kss --config kss-config.json'));
 
-exports.default = gulp.series(compile, renameBundle, clean, minify);
+gulp.task('watch', () => gulp.watch('./src/**/*.scss', gulp.series(compile, renameBundle, clean, minify, docs)));
+
+exports.default = gulp.series(compile, renameBundle, clean, minify, docs);
