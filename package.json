@@ -1,0 +1,11 @@
+{
+  "name": "autostat-ui",
+  "version": "1.0.0",
+  "description": "Stylesheets of reusable UI components and utilities for the AutoStat project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikola Lazarov",
+  "license": "MIT"
+}
