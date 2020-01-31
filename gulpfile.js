@@ -8,8 +8,8 @@ const cleanCSS = require('gulp-clean-css');
 sass.compiler = require('node-sass');
 
 const compile = () => gulp.src('./src/main.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('dist'));
+  .pipe(sass().on('error', sass.logError))
+  .pipe(gulp.dest('dist'));
 
 const renameBundle = () => gulp.src('./dist/main.css')
   .pipe(rename('autostat-ui.css'))
@@ -18,12 +18,12 @@ const renameBundle = () => gulp.src('./dist/main.css')
 const clean = () => del('./dist/main.css');
 
 const minify = () => gulp.src('./dist/autostat-ui.css')
-    .pipe(rename('autostat-ui.min.css'))
-    .pipe(cleanCSS())
-    .pipe(gulp.dest('dist'));
+  .pipe(rename('autostat-ui.min.css'))
+  .pipe(cleanCSS())
+  .pipe(gulp.dest('dist'));
 
 const docs = () => gulp.src(['src/**/*.scss'])
-    .pipe(run('kss --config kss-config.json'));
+  .pipe(run('kss --config kss-config.json'));
 
 gulp.task('watch', () => gulp.watch('./src/**/*.scss', gulp.series(compile, renameBundle, clean, minify, docs)));
 
