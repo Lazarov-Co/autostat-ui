@@ -22,9 +22,13 @@ const minify = () => gulp.src('./dist/autostat-ui.css')
   .pipe(cleanCSS())
   .pipe(gulp.dest('dist'));
 
+const copyDocsCSS = () => gulp.src('./dist/autostat-ui.min.css')
+  .pipe(rename('autostat-ui.min.css'))
+  .pipe(gulp.dest('docs'));
+
 const docs = () => gulp.src(['src/**/*.scss'])
   .pipe(run('kss --config kss-config.json'));
 
-gulp.task('watch', () => gulp.watch('./src/**/*.scss', gulp.series(compile, renameBundle, clean, minify, docs)));
+gulp.task('watch', () => gulp.watch('./src/**/*.scss', gulp.series(compile, renameBundle, clean, minify, docs, copyDocsCSS)));
 
-exports.default = gulp.series(compile, renameBundle, clean, minify, docs);
+exports.default = gulp.series(compile, renameBundle, clean, minify, docs, copyDocsCSS);

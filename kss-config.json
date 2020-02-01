@@ -3,5 +3,5 @@
   "source": "src/",
   "destination": "docs/",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
-  "css": [ "../dist/autostat-ui.min.css" ]
+  "css": [ "autostat-ui.min.css" ]
 }
