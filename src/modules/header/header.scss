@@ -1,0 +1,96 @@
+header {
+  background: #fff;
+  box-shadow: 0 3px 34px rgba(0, 0, 0, 0.16);
+  position: relative;
+  z-index: 10;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .Nav-content {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 17px;
+  }
+
+  nav {
+    flex: 1.8;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 17px;
+      text-transform: uppercase;
+      font: 700 14px/80px 'Roboto', sans-serif;
+      letter-spacing: 0.025em;
+    }
+
+    a {
+      color: #000;
+
+      &:hover {
+        text-decoration: none;
+        color: $active-prim;
+      }
+    }
+  }
+
+  nav.sec {
+    flex: 1;
+    align-content: flex-end;
+
+    ul { text-align: right; }
+  }
+
+  .Hamburger { display: none; }
+ 
+  &.is-active {
+    .Nav-content {
+      display: block;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #fff;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.16);
+      z-index: -1;
+      box-sizing: border-box;
+      padding: 100px 0 0;
+    }
+
+    nav {
+      ul {
+        text-align: left;
+      }
+
+      li {
+        display: block;
+        line-height: 60px;
+        text-align: center;
+
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header .Nav-content { display: none; }
+
+  header .Hamburger { display: block; }
+
+  header .container { justify-content: space-between; }
+}

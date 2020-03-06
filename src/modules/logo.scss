@@ -1,0 +1,16 @@
+.Logo {
+  .Logo-graphic {
+    display: inline-block;
+    vertical-align: middle;
+    user-select: none;
+    margin-right: 0.5em;
+  }
+
+  .Logo-text {
+    display: inline-block;
+    font: 700 20px Roboto, sans-serif;
+    letter-spacing: 0.05em;
+    cursor: default;
+    user-select: none;
+  }
+}

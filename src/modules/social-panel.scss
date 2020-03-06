@@ -1,0 +1,17 @@
+.SocialPanel {
+  font-size: 0;
+
+  a {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 0.5em;
+  }
+
+  a:last-of-type {
+    margin-right: 0;
+  }
+
+  svg {
+    color: $active-sec;
+  }
+}

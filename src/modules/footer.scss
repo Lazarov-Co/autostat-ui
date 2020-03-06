@@ -1,0 +1,45 @@
+footer {
+  padding: 40px 0;
+  background-color: $bg-lightgrey;
+
+  nav {
+    ul {
+      list-style: none;
+      font-size: 0;
+    }
+
+    li {
+      display: inline-block;
+      font: 500 14px/2 'Roboto', sans-serif;
+      
+      a {
+        color: $active-sec;
+      }
+
+      &:after {
+        content: '|';
+        font-weight: 400;
+        color: $bg-grey;
+        padding: 0 0.75em;
+        pointer-events: none;
+      }
+
+      &:last-of-type:after {
+        content: none;
+      }
+    }
+  }
+
+  .Copyright {
+    font: 400 12px 'Roboto', sans-serif;
+    color: $inactive-sec;
+  }
+
+  .SocialPanel {
+    text-align: right;
+
+    @media (max-width: 1200px) {
+      text-align: left;
+    }
+  }
+}
