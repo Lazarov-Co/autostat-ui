@@ -1,6 +1,6 @@
 (function() {
-  const hamburger = document.querySelector('header .Hamburger');
-  const header = document.querySelector('header');
+  const header = document.querySelector('.Header');
+  const hamburger = document.querySelector('.Header-hamburger');
   let isActive = false;
 
   function open() {

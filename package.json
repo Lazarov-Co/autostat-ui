@@ -9,6 +9,9 @@
   },
   "author": "Nikola Lazarov",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "del": "5.1.0",
     "gulp": "4.0.2",

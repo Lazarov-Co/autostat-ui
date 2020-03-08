@@ -126,46 +126,46 @@ ul {
   cursor: default;
   user-select: none; }
 
-header {
+.Header {
   background: #fff;
   box-shadow: 0 3px 34px rgba(0, 0, 0, 0.16);
   position: relative;
   z-index: 10; }
-  header .container {
+  .Header .container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; }
-  header .Nav-content {
+  .Header .Header-content {
     display: flex;
     flex: 1;
     flex-direction: row;
     flex-wrap: nowrap;
     padding-left: 17px; }
-  header nav {
+  .Header .Header-nav {
     flex: 1.8; }
-    header nav ul {
+    .Header .Header-nav ul {
       list-style: none;
       padding: 0;
       margin: 0; }
-    header nav li {
+    .Header .Header-nav li {
       display: inline-block;
       padding: 0 17px;
       text-transform: uppercase;
       font: 700 14px/80px 'Roboto', sans-serif;
       letter-spacing: 0.025em; }
-    header nav a {
+    .Header .Header-nav a {
       color: #000; }
-      header nav a:hover {
+      .Header .Header-nav a:hover {
         text-decoration: none;
         color: #DF7700; }
-  header nav.sec {
+  .Header .Header-nav--right {
     flex: 1;
     align-content: flex-end; }
-    header nav.sec ul {
+    .Header .Header-nav--right ul {
       text-align: right; }
-  header .Hamburger {
+  .Header .Header-hamburger {
     display: none; }
-  header.is-active .Nav-content {
+  .Header.is-active .Header-content {
     display: block;
     position: fixed;
     right: 0;
@@ -177,49 +177,49 @@ header {
     z-index: -1;
     box-sizing: border-box;
     padding: 100px 0 0; }
-  header.is-active nav ul {
+  .Header.is-active .Header-nav ul {
     text-align: left; }
-  header.is-active nav li {
+  .Header.is-active .Header-nav li {
     display: block;
     line-height: 60px;
     text-align: center; }
-    header.is-active nav li a {
+    .Header.is-active .Header-nav li a {
       font-size: 20px; }
 
 @media screen and (max-width: 800px) {
-  header .Nav-content {
+  .Header .Header-content {
     display: none; }
-  header .Hamburger {
+  .Header .Header-hamburger {
     display: block; }
-  header .container {
+  .Header .container {
     justify-content: space-between; } }
 
-footer {
+.Footer {
   padding: 40px 0;
   background-color: #f2f2f2; }
-  footer nav ul {
+  .Footer .Footer-nav ul {
     list-style: none;
     font-size: 0; }
-  footer nav li {
+  .Footer .Footer-nav li {
     display: inline-block;
     font: 500 14px/2 'Roboto', sans-serif; }
-    footer nav li a {
+    .Footer .Footer-nav li a {
       color: #17476B; }
-    footer nav li:after {
+    .Footer .Footer-nav li:after {
       content: '|';
       font-weight: 400;
       color: #c9c9c9;
       padding: 0 0.75em;
       pointer-events: none; }
-    footer nav li:last-of-type:after {
+    .Footer .Footer-nav li:last-of-type:after {
       content: none; }
-  footer .Copyright {
+  .Footer .Footer-copy {
     font: 400 12px 'Roboto', sans-serif;
     color: #333333; }
-  footer .SocialPanel {
+  .Footer .SocialPanel {
     text-align: right; }
     @media (max-width: 1200px) {
-      footer .SocialPanel {
+      .Footer .SocialPanel {
         text-align: left; } }
 
 .Card {
@@ -397,3 +397,42 @@ input[type="radio"]:checked:after {
     margin-right: 0; }
   .SocialPanel svg {
     color: #17476B; }
+
+.Sidebar {
+  overflow: visible; }
+  .Sidebar ul {
+    display: block;
+    list-style: none;
+    border-right: 1px solid #c9c9c9;
+    padding: 10px 0; }
+  .Sidebar li {
+    display: block;
+    position: relative;
+    width: calc(100% + 2px);
+    margin-bottom: 2px; }
+    .Sidebar li:after {
+      content: '';
+      width: 4px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0px; }
+    .Sidebar li:hover a {
+      color: black;
+      text-decoration: none;
+      opacity: 1; }
+    .Sidebar li:hover:after {
+      background-color: #c9c9c9; }
+    .Sidebar li a {
+      display: block;
+      padding: 1em 1em 1em 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font: 500 18px 'Roboto', sans-serif;
+      color: #333333; }
+  .Sidebar .is-active:hover a,
+  .Sidebar .is-active a {
+    color: #17476B; }
+  .Sidebar .is-active:hover:after, .Sidebar .is-active:after {
+    background-color: #17476B; }

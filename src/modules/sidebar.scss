@@ -1,0 +1,80 @@
+// Sidebar
+//
+// Markup:
+// <div class="row">
+//   <div class="col-3">
+//     <aside class="Sidebar">
+//       <nav>
+//         <ul>
+//           <li class="is-active"><a href="#">Link 1</a></li>
+//           <li><a href="#">Link 2</a></li>
+//           <li><a href="#">Link 3 (too long text to fit in this space)</a></li>
+//           <li><a href="#">Link 4</a></li>
+//         </ul>
+//       </nav>
+//     </aside>
+//   </div>
+// </div>
+//
+// Styleguide Sidebar
+
+.Sidebar {
+  overflow: visible;
+
+  ul {
+    display: block;
+    list-style: none;
+    border-right: 1px solid $bg-grey;
+    padding: 10px 0;
+  }
+
+  li {
+    display: block;
+    position: relative;
+    width: calc(100% + 2px);
+    margin-bottom: 2px;
+
+    &:after {
+      content: '';
+      width: 4px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0px;
+    }
+
+    &:hover {
+      a {
+        color: black;
+        text-decoration: none;
+        opacity: 1;
+      }
+
+      &:after {
+        background-color: $bg-grey;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 1em 1em 1em 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font: 500 18px 'Roboto', sans-serif;
+      color: $inactive-sec;
+    }
+  }
+
+  .is-active {
+    &:hover a,
+    a {
+      color: $active-sec;
+    }
+
+    &:hover:after,
+    &:after {
+      background-color: $active-sec;
+    }
+  }
+}

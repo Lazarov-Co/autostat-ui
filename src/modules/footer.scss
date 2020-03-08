@@ -1,8 +1,8 @@
-footer {
+.Footer {
   padding: 40px 0;
   background-color: $bg-lightgrey;
 
-  nav {
+  .Footer-nav {
     ul {
       list-style: none;
       font-size: 0;
@@ -30,7 +30,7 @@ footer {
     }
   }
 
-  .Copyright {
+  .Footer-copy {
     font: 400 12px 'Roboto', sans-serif;
     color: $inactive-sec;
   }
