@@ -1,6 +1,10 @@
 (function() {
   const header = document.querySelector('.Header');
+  if (header === null) return;
+
   const hamburger = document.querySelector('.Header-hamburger');
+  if (hamburger === null) return;
+  
   let isActive = false;
 
   function open() {
@@ -31,14 +35,21 @@
 (function() {
   const sidebars = document.querySelectorAll('.Sidebar');
 
-  sidebars.forEach(sidebar => {
-    const listItems = Array.from(sidebar.querySelectorAll('li'));
-    const links = Array.from(sidebar.querySelectorAll('a'));
+  function init() {
+    sidebars.forEach(sidebar => setActiveItem(sidebar));
+  }
+
+  function setActiveItem(sidebar) {
+    const listItems = sidebar.querySelectorAll('li');
+    const links = sidebar.querySelectorAll('a');
 
     links.forEach((link, index) => {
       const href = link.getAttribute('href');
       const targetUrl = new URL(href, document.baseURI).href;
-      if (targetUrl === document.url) listItems[index].classList.add('is-active');
+
+      if (targetUrl === document.URL) listItems[index].classList.add('is-active');
     });
-  });
+  }
+
+  window.addEventListener('DOMContentLoaded', init);
 })();
