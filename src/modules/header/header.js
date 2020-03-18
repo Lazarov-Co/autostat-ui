@@ -1,6 +1,10 @@
 (function() {
   const header = document.querySelector('.Header');
+  if (header === null) return;
+
   const hamburger = document.querySelector('.Header-hamburger');
+  if (hamburger === null) return;
+  
   let isActive = false;
 
   function open() {
