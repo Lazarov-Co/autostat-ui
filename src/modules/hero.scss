@@ -1,16 +1,15 @@
 // Hero
 //
 // Markup:
-// <div class="Hero c-white bg-inactive-prim">
+// <section class="Hero c-white bg-inactive-prim">
 //   <div class="container">
 //     <h1>Hello</h1>
 //   </div>
-// </div>
+// </section>
 //
 // Styleguide Hero
 
 .Hero {
-  padding: 60px 0;
   position: relative;
 
   .container {
@@ -37,21 +36,21 @@
 // Hero with Background Image
 //
 // Markup:
-// <div class="Hero c-white">
+// <section class="Hero c-white">
 //   <div class="Hero-bg">
 //     <img src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg" />
 //   </div>
 //   <div class="container">
 //     <h1>Hello</h1>
 //   </div>
-// </div>
+// </section>
 //
 // Styleguide Hero.Hero Background
 
 // Hero Subheading
 //
 // Markup:
-// <div class="Hero c-white">
+// <section class="Hero c-white">
 //   <div class="Hero-bg">
 //     <img src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg" />
 //   </div>
@@ -59,6 +58,6 @@
 //     <h1>Hello</h1>
 //     <p class="my-0">Lorem ipsum dolor sit amet</p>
 //   </div>
-// </div>
+// </section>
 //
 // Styleguide Hero.Hero Subheading

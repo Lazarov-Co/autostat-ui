@@ -444,7 +444,6 @@ input[type="radio"]:checked:after {
     background-color: #17476B; }
 
 .Hero {
-  padding: 60px 0;
   position: relative; }
   .Hero .container {
     position: relative;
