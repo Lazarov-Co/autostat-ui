@@ -443,6 +443,9 @@ input[type="radio"]:checked:after {
   .Sidebar .is-active:hover:after, .Sidebar .is-active:after {
     background-color: #17476B; }
 
+section {
+  padding: 60px 0; }
+
 .Hero {
   position: relative; }
   .Hero .container {
