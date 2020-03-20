@@ -39,6 +39,15 @@ $bg-lightgrey:  #f2f2f2;
 $inactive-prim: #163146;
 $inactive-sec: #333333;
 
+// Inactive Background Utilities
+//
+// `.bg-inactive-prim`
+// `.bg-inactive-sec`
+//
+// Styleguide Colors.Inactive
+.bg-inactive-prim  { background-color: $inactive-prim; }
+.bg-inactive-sec   { background-color: $inactive-sec; }
+
 // Inactive Color Utilities
 //
 // `.c-black`

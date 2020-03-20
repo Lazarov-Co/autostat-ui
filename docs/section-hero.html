@@ -63,10 +63,24 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-hero.html">
+            <a class="kss-state-active" href="section-hero.html">
               <span class="kss-nav__ref">5</span>
               <span class="kss-nav__name">Hero</span>
             </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-hero.html#kssref-hero-hero-background">
+                        <span class="kss-nav__ref">5.1</span>
+                        <span class="kss-nav__name">Hero with Background Image</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-hero.html#kssref-hero-hero-subheading">
+                        <span class="kss-nav__ref">5.2</span>
+                        <span class="kss-nav__name">Hero Subheading</span>
+                      </a>
+                    </li>
+                </ul>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-sidebar.html">
@@ -75,24 +89,10 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="kss-state-active" href="section-tables.html">
+            <a class="" href="section-tables.html">
               <span class="kss-nav__ref">7</span>
               <span class="kss-nav__name">Tables</span>
             </a>
-                <ul class="kss-nav__subnav">
-                    <li class="kss-nav__item ">
-                      <a href="section-tables.html#kssref-tables-table">
-                        <span class="kss-nav__ref">7.1</span>
-                        <span class="kss-nav__name">Table</span>
-                      </a>
-                    </li>
-                    <li class="kss-nav__item ">
-                      <a href="section-tables.html#kssref-tables-tablelite">
-                        <span class="kss-nav__ref">7.2</span>
-                        <span class="kss-nav__name">Table--lite</span>
-                      </a>
-                    </li>
-                </ul>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-typography.html">
@@ -113,31 +113,51 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-1" id="kssref-tables">
+            <header class="kss-section kss-section--depth-1" id="kssref-hero">
 
             <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>modules/hero.scss</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-tables">
+              <a class="kss-section__permalink" href="#kssref-hero">
                 <h1 class="kss-section__item kss-section__item--depth-1">
-                  <span class="kss-section__ref">7</span>
-                  <span class="kss-section__name">Tables</span>
+                  <span class="kss-section__ref">5</span>
+                  <span class="kss-section__name">Hero</span>
                 </h1>
               </a>
 
 
             </article>
 
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="Hero c-white bg-inactive-prim">
+  <div class="container">
+    <h1>Hello</h1>
+  </div>
+</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;Hero c-white bg-inactive-prim&quot;&gt;
+  &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;h1&gt;Hello&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </article>
 
             </header>
-            <section class="kss-section kss-section--depth-2" id="kssref-tables-table">
+            <section class="kss-section kss-section--depth-2" id="kssref-hero-hero-background">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>modules/tables.scss</span>, line <span>1</span></p>
+                <p class="kss-section__source">Source: <span>modules/hero.scss</span>, line <span>37</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-tables-table">
+              <a class="kss-section__permalink" href="#kssref-hero-hero-background">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">7.1</span>
-                  <span class="kss-section__name">Table</span>
+                  <span class="kss-section__ref">5.1</span>
+                  <span class="kss-section__name">Hero with Background Image</span>
                 </h2>
               </a>
 
@@ -148,74 +168,38 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><table class="Table">
-  <thead>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Age</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>John</td>
-      <td>Doe</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <td>Ivan</td>
-      <td>Ivanov</td>
-      <td>32</td>
-    </tr>
-    <tr>
-      <td>Georgi</td>
-      <td>Georgiev</td>
-      <td>33</td>
-    </tr>
-  </tbody>
-</table></div>
+                <div class="kss-modifiers__example"><div class="Hero c-white">
+  <div class="Hero-bg">
+    <img src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg" />
+  </div>
+  <div class="container">
+    <h1>Hello</h1>
+  </div>
+</div></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;table class&#x3D;&quot;Table&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;First Name&lt;/th&gt;
-      &lt;th&gt;Last Name&lt;/th&gt;
-      &lt;th&gt;Age&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;John&lt;/td&gt;
-      &lt;td&gt;Doe&lt;/td&gt;
-      &lt;td&gt;23&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Ivan&lt;/td&gt;
-      &lt;td&gt;Ivanov&lt;/td&gt;
-      &lt;td&gt;32&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Georgi&lt;/td&gt;
-      &lt;td&gt;Georgiev&lt;/td&gt;
-      &lt;td&gt;33&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;Hero c-white&quot;&gt;
+  &lt;div class&#x3D;&quot;Hero-bg&quot;&gt;
+    &lt;img src&#x3D;&quot;https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;h1&gt;Hello&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                 </article>
 
             </section>
-            <section class="kss-section kss-section--depth-2" id="kssref-tables-tablelite">
+            <section class="kss-section kss-section--depth-2" id="kssref-hero-hero-subheading">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>modules/tables.scss</span>, line <span>76</span></p>
+                <p class="kss-section__source">Source: <span>modules/hero.scss</span>, line <span>51</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-tables-tablelite">
+              <a class="kss-section__permalink" href="#kssref-hero-hero-subheading">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">7.2</span>
-                  <span class="kss-section__name">Table--lite</span>
+                  <span class="kss-section__ref">5.2</span>
+                  <span class="kss-section__name">Hero Subheading</span>
                 </h2>
               </a>
 
@@ -226,54 +210,28 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><table class="Table Table--lite">
-  <thead>
-    <tr>
-      <th>First Name</th>
-      <th>Age</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>John</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <td>Ivan</td>
-      <td>32</td>
-    </tr>
-    <tr>
-      <td>Georgi</td>
-      <td>33</td>
-    </tr>
-  </tbody>
-</table></div>
+                <div class="kss-modifiers__example"><div class="Hero c-white">
+  <div class="Hero-bg">
+    <img src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg" />
+  </div>
+  <div class="container">
+    <h1>Hello</h1>
+    <p class="my-0">Lorem ipsum dolor sit amet</p>
+  </div>
+</div></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;table class&#x3D;&quot;Table Table--lite&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;First Name&lt;/th&gt;
-      &lt;th&gt;Age&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;John&lt;/td&gt;
-      &lt;td&gt;23&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Ivan&lt;/td&gt;
-      &lt;td&gt;32&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Georgi&lt;/td&gt;
-      &lt;td&gt;33&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;Hero c-white&quot;&gt;
+  &lt;div class&#x3D;&quot;Hero-bg&quot;&gt;
+    &lt;img src&#x3D;&quot;https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;h1&gt;Hello&lt;/h1&gt;
+    &lt;p class&#x3D;&quot;my-0&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                 </article>
 
             </section>

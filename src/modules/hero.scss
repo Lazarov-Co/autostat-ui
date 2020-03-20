@@ -1,0 +1,64 @@
+// Hero
+//
+// Markup:
+// <div class="Hero c-white bg-inactive-prim">
+//   <div class="container">
+//     <h1>Hello</h1>
+//   </div>
+// </div>
+//
+// Styleguide Hero
+
+.Hero {
+  padding: 60px 0;
+  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.Hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Hero with Background Image
+//
+// Markup:
+// <div class="Hero c-white">
+//   <div class="Hero-bg">
+//     <img src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg" />
+//   </div>
+//   <div class="container">
+//     <h1>Hello</h1>
+//   </div>
+// </div>
+//
+// Styleguide Hero.Hero Background
+
+// Hero Subheading
+//
+// Markup:
+// <div class="Hero c-white">
+//   <div class="Hero-bg">
+//     <img src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg" />
+//   </div>
+//   <div class="container">
+//     <h1>Hello</h1>
+//     <p class="my-0">Lorem ipsum dolor sit amet</p>
+//   </div>
+// </div>
+//
+// Styleguide Hero.Hero Subheading
