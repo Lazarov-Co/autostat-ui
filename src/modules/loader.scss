@@ -1,0 +1,49 @@
+// Loader
+//
+// Markup:
+// <div style="width: 500px; height: 500px; position: relative;">
+//   <div class="Loader is-visible">
+//     <div class="Loader-graphic"></div>
+//   </div>
+// </div>
+//
+// Styleguide Loader
+
+.Loader.is-visible {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+
+  .Loader-graphic {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+
+  .Loader-graphic:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid $active-sec;
+    border-color: $active-sec transparent $active-sec transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
