@@ -513,6 +513,9 @@ section {
     display: block;
     margin-bottom: 1rem; }
 
+.HeatScale {
+  padding-top: 30px; }
+
 .HeatScale-scale {
   position: relative;
   display: block;

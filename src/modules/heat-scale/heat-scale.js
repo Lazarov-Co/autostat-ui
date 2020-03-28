@@ -16,5 +16,5 @@
     });
   }
 
-  window.addEventListener('DOMContentLoaded', setHeatScales);
+  window.addEventListener('load', setHeatScales);
 })();
