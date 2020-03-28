@@ -1,0 +1,94 @@
+// HeatScale
+//
+// Markup:
+// <div class="HeatScale" data-value="0.5" style="width: 350px;">
+//   <div class="HeatScale-scale">
+//     <div class="HeatScale-realValue">8s</div>
+//     <div class="HeatScale-scale-indicator"></div>
+//   </div>
+//   <div class="HeatScale-labels">
+//     <div class="HeatScale-label HeatScale-label--min">Slow</div>
+//     <div class="HeatScale-label HeatScale-label--max">Fast</div>
+//   </div>
+// </div>
+//
+// Styleguide HeatScale
+
+.HeatScale-scale {
+  position: relative;
+  display: block;
+  width: calc(100% - 30px);
+  height: 6px;
+  margin: 0 15px;
+}
+
+.HeatScale-scale:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -15px;
+  bottom: 0;
+  left: -15px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #ff8140 0%,#ffd500 50%,#9ef900 100%);
+}
+
+.HeatScale-scale-indicator {
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  background-color: #ff8140;
+  transition: 1s background-color, 1s left;
+}
+
+.HeatScale-scale-indicator--yellow {
+  background-color: #ffd500;
+}
+
+.HeatScale-scale-indicator--green {
+  background-color: #9ef900;
+}
+
+.HeatScale-labels {
+  padding-top: 13px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.HeatScale-label {
+  font: 600 13px/1 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.HeatScale-label--min {
+  color: #FF8140;
+}
+
+.HeatScale-label--max {
+  color: #92C835;
+}
+
+.HeatScale-realValue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translate(-50%, 0);
+  font: 600 18px/1 'Roboto', sans-serif;
+  color: #000;
+  padding-bottom: 13px;
+  transition: 0.5s 1s transform, 0.5s 1s opacity;
+
+  &.is-active {
+    opacity: 1;
+    transform: translate(-50%, -100%);
+  }
+}
