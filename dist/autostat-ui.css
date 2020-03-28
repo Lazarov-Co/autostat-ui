@@ -232,7 +232,7 @@ ul {
   display: block;
   background: white;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-  border-radius: 5px; }
+  border-radius: 15px; }
   .Card figure {
     position: relative;
     margin: 0;
