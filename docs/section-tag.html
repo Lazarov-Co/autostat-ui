@@ -105,10 +105,18 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-tag.html">
+            <a class="kss-state-active" href="section-tag.html">
               <span class="kss-nav__ref">12</span>
               <span class="kss-nav__name">Tag</span>
             </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-tag.html#kssref-tag-tagwithicon">
+                        <span class="kss-nav__ref">12.1</span>
+                        <span class="kss-nav__name">Tag with Icon</span>
+                      </a>
+                    </li>
+                </ul>
           </li>
           <li class="kss-nav__item">
             <a class="" href="section-typography.html">
@@ -129,15 +137,43 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-forms-submit">
+            <header class="kss-section kss-section--depth-1" id="kssref-tag">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>modules/forms.scss</span>, line <span>69</span></p>
+                <p class="kss-section__source">Source: <span>modules/tag.scss</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-forms-submit">
+              <a class="kss-section__permalink" href="#kssref-tag">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">12</span>
+                  <span class="kss-section__name">Tag</span>
+                </h1>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="Tag">120</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;Tag&quot;&gt;120&lt;/div&gt;</code></pre>
+                </article>
+
+            </header>
+            <section class="kss-section kss-section--depth-2" id="kssref-tag-tagwithicon">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>modules/tag.scss</span>, line <span>16</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tag-tagwithicon">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">4.4</span>
-                  <span class="kss-section__name">Submit</span>
+                  <span class="kss-section__ref">12.1</span>
+                  <span class="kss-section__name">Tag with Icon</span>
                 </h2>
               </a>
 
@@ -148,19 +184,27 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><div class="Field">
-  <button type="submit" class="Btn">Submit</button>
+                <div class="kss-modifiers__example"><div class="Tag d-inline-flex">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="27" height="27" class="align-self-center mr-2">
+    <path d="M498.82 206.607L305.394 13.18C296.895 4.68 285.594 0 273.574 0H45C20.187 0 0 20.187 0 45v422c0 24.813 20.187 45 45 45h241c5.682 0 10.875-3.21 13.417-8.292C333.65 435.24 404.99 391 481.164 391H497c8.284 0 15-6.716 15-15V238.427c0-12.02-4.681-23.32-13.18-31.82zM482 361h-.836c-43.098 0-85.471 12.164-122.539 35.177-34.306 21.299-62.39 50.844-81.685 85.823H45c-8.271 0-15-6.729-15-15V45c0-8.271 6.729-15 15-15h228.574c4.006 0 7.773 1.56 10.606 4.394L477.606 227.82A14.903 14.903 0 01482 238.427V361z"></path>
+    <path d="M446.637 240.282L271.778 64.424A14.996 14.996 0 00261.142 60H75c-8.284 0-15 6.716-15 15v181c0 8.284 6.716 15 15 15h361c8.284 0 15-6.716 15-15v-5.142c0-3.963-1.569-7.766-4.363-10.576zM90 241V90h164.903l150.141 151H90zM165 331H75c-8.284 0-15 6.716-15 15v15c0 33.084 26.916 60 60 60s60-26.916 60-60v-15c0-8.284-6.716-15-15-15zm-45 60c-16.542 0-30-13.558-30-30.1h60c0 16.542-13.458 30.1-30 30.1z"></path>
+  </svg>
+  <span>5</span>
 </div></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;Field&quot;&gt;
-  &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;Btn&quot;&gt;Submit&lt;/button&gt;
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;Tag d-inline-flex&quot;&gt;
+  &lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; viewBox&#x3D;&quot;0 0 512 512&quot; width&#x3D;&quot;27&quot; height&#x3D;&quot;27&quot; class&#x3D;&quot;align-self-center mr-2&quot;&gt;
+    &lt;path d&#x3D;&quot;M498.82 206.607L305.394 13.18C296.895 4.68 285.594 0 273.574 0H45C20.187 0 0 20.187 0 45v422c0 24.813 20.187 45 45 45h241c5.682 0 10.875-3.21 13.417-8.292C333.65 435.24 404.99 391 481.164 391H497c8.284 0 15-6.716 15-15V238.427c0-12.02-4.681-23.32-13.18-31.82zM482 361h-.836c-43.098 0-85.471 12.164-122.539 35.177-34.306 21.299-62.39 50.844-81.685 85.823H45c-8.271 0-15-6.729-15-15V45c0-8.271 6.729-15 15-15h228.574c4.006 0 7.773 1.56 10.606 4.394L477.606 227.82A14.903 14.903 0 01482 238.427V361z&quot;&gt;&lt;/path&gt;
+    &lt;path d&#x3D;&quot;M446.637 240.282L271.778 64.424A14.996 14.996 0 00261.142 60H75c-8.284 0-15 6.716-15 15v181c0 8.284 6.716 15 15 15h361c8.284 0 15-6.716 15-15v-5.142c0-3.963-1.569-7.766-4.363-10.576zM90 241V90h164.903l150.141 151H90zM165 331H75c-8.284 0-15 6.716-15 15v15c0 33.084 26.916 60 60 60s60-26.916 60-60v-15c0-8.284-6.716-15-15-15zm-45 60c-16.542 0-30-13.558-30-30.1h60c0 16.542-13.458 30.1-30 30.1z&quot;&gt;&lt;/path&gt;
+  &lt;/svg&gt;
+  &lt;span&gt;5&lt;/span&gt;
 &lt;/div&gt;</code></pre>
                 </article>
 
-            </header>
+            </section>
     </section>
     <!-- /documentation. -->
 
