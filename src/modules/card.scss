@@ -16,7 +16,7 @@
 //     </footer>
 //   </div>
 // </div>
-// <div style="width: 25%; display: inline-block;">
+// <div style="width: 25%; display: inline-block; margin-right: 3em;">
 //   <a class="Card Card--active" href="#">
 //     <figure>
 //       <img src="https://mountain-talk.eu/wp-content/uploads/2020/01/DSC2291-495x400.jpg">
@@ -30,6 +30,22 @@
 //       <p>Footer Content</p>
 //     </footer>
 //   </a>
+// </div>
+// <div style="width: 25%; display: inline-block;">
+//   <div class="Card">
+//     <header class="d-flex justify-content-between">
+//       <h5>Header</h5>
+//       <button class="Btn0">&times;</button>
+//     </header>
+//     <div class="Card-content">
+//       <h4>Headline</h4>
+//       <h6>Position here</h6>
+//       <p>Lorem ipsum dolor sit amet.</p>
+//     </div>
+//     <footer>
+//       <p>Footer Content</p>
+//     </footer>
+//   </div>
 // </div>
 //
 // Styleguide Card
@@ -78,13 +94,19 @@
     }
   }
 
+  header p,
+  footer p {
+    margin: 0;
+    color: $inactive-sec;
+  }
+
+  header {
+    border-bottom: 1px solid $bg-lightgrey;
+    padding: 0.5em 1em;
+  }
+
   footer {
     border-top: 1px solid $bg-lightgrey;
-
-    p {
-      margin: 0;
-      color: $inactive-sec;
-    }
   }
 
   &--active {

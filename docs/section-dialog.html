@@ -57,7 +57,7 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-dialog.html">
+            <a class="kss-state-active" href="section-dialog.html">
               <span class="kss-nav__ref">4</span>
               <span class="kss-nav__name">Dialog</span>
             </a>
@@ -135,23 +135,18 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-typography-headings">
+            <header class="kss-section kss-section--depth-1" id="kssref-dialog">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>modules/typography.scss</span>, line <span>16</span></p>
+                <p class="kss-section__source">Source: <span>modules/dialog/dialog.scss</span>, line <span>29</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-typography-headings">
-                <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">14.2</span>
-                  <span class="kss-section__name">Headings</span>
-                </h2>
+              <a class="kss-section__permalink" href="#kssref-dialog">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">4</span>
+                  <span class="kss-section__name">Dialog</span>
+                </h1>
               </a>
 
-                <div class="kss-section__description"><p>Size and height are calculated using the Golden Ratio</p>
-<h3>References:</h3>
-<p><code>https://pearsonified.com/golden-ratio-typography-intro/</code><br>
-<code>https://grtcalculator.com/</code><br></p>
-</div>
 
             </article>
 
@@ -159,22 +154,44 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6></div>
+                <div class="kss-modifiers__example"><div class="Dialog js-dialog" id="my-dialog">
+  <div class="Card">
+    <header class="d-flex justify-content-between">
+      <h5>Header</h5>
+      <button class="Btn0 js-close-dialog" data-dialog-id="my-dialog">&times;</button>
+    </header>
+    <div class="Card-content">
+      <h4>Headline</h4>
+      <h6>Position here</h6>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <footer>
+      <p>Footer Content</p>
+    </footer>
+  </div>
+</div>
+<button class="js-open-dialog Btn" data-dialog-id="my-dialog" type="button">Open Dialog</button></div>
 
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;h1&gt;Heading 1&lt;/h1&gt;
-&lt;h2&gt;Heading 2&lt;/h2&gt;
-&lt;h3&gt;Heading 3&lt;/h3&gt;
-&lt;h4&gt;Heading 4&lt;/h4&gt;
-&lt;h5&gt;Heading 5&lt;/h5&gt;
-&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;Dialog js-dialog&quot; id&#x3D;&quot;my-dialog&quot;&gt;
+  &lt;div class&#x3D;&quot;Card&quot;&gt;
+    &lt;header class&#x3D;&quot;d-flex justify-content-between&quot;&gt;
+      &lt;h5&gt;Header&lt;/h5&gt;
+      &lt;button class&#x3D;&quot;Btn0 js-close-dialog&quot; data-dialog-id&#x3D;&quot;my-dialog&quot;&gt;&amp;times;&lt;/button&gt;
+    &lt;/header&gt;
+    &lt;div class&#x3D;&quot;Card-content&quot;&gt;
+      &lt;h4&gt;Headline&lt;/h4&gt;
+      &lt;h6&gt;Position here&lt;/h6&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;footer&gt;
+      &lt;p&gt;Footer Content&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;button class&#x3D;&quot;js-open-dialog Btn&quot; data-dialog-id&#x3D;&quot;my-dialog&quot; type&#x3D;&quot;button&quot;&gt;Open Dialog&lt;/button&gt;</code></pre>
                 </article>
 
             </header>

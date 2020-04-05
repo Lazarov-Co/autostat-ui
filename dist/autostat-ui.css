@@ -120,6 +120,14 @@ ul {
   .Btn--sec {
     background-color: #17476B; }
 
+.Btn0 {
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer; }
+
 .Logo .Logo-graphic {
   display: inline-block;
   vertical-align: middle;
@@ -261,11 +269,15 @@ ul {
     text-transform: uppercase; }
   .Card-content p {
     margin: 0 0 0.5em; }
+  .Card header p,
+  .Card footer p {
+    margin: 0;
+    color: #333333; }
+  .Card header {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0.5em 1em; }
   .Card footer {
     border-top: 1px solid #f2f2f2; }
-    .Card footer p {
-      margin: 0;
-      color: #333333; }
   .Card--active {
     transition: box-shadow 0.2s; }
     .Card--active h4 {
@@ -591,3 +603,28 @@ section {
   padding: 0.5em 1.75em;
   border-radius: 15px;
   font: 900 18px/34px 'Lato', sans-serif; }
+
+.Dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  max-height: 70vh;
+  overflow-y: auto;
+  z-index: 12; }
+  @media screen and (max-width: 527px) {
+    .Dialog {
+      max-width: 95vw; } }
+
+.DialogOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 11; }

@@ -1,0 +1,50 @@
+.Dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  max-height: 70vh;
+  overflow-y: auto;
+  z-index: 12;
+
+  @media screen and (max-width: 527px) {
+    max-width: 95vw;
+  }
+}
+
+.DialogOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 11;
+}
+
+// Dialog
+//
+// Markup:
+// <div class="Dialog js-dialog" id="my-dialog">
+//   <div class="Card">
+//     <header class="d-flex justify-content-between">
+//       <h5>Header</h5>
+//       <button class="Btn0 js-close-dialog" data-dialog-id="my-dialog">&times;</button>
+//     </header>
+//     <div class="Card-content">
+//       <h4>Headline</h4>
+//       <h6>Position here</h6>
+//       <p>Lorem ipsum dolor sit amet.</p>
+//     </div>
+//     <footer>
+//       <p>Footer Content</p>
+//     </footer>
+//   </div>
+// </div>
+// <button class="js-open-dialog Btn" data-dialog-id="my-dialog" type="button">Open Dialog</button>
+//
+// Styleguide Dialog
