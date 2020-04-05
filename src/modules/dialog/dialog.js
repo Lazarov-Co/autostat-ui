@@ -7,7 +7,7 @@
     const overlay = document.createElement('div');
     overlay.classList.add('DialogOverlay', 'js-dialog-overlay');
     overlay.addEventListener('click', () => close(dialog));
-    dialog.parentElement.insertBefore(overlay, dialog);
+    document.body.prepend(overlay);
     
     dialog.autostat_ui = {
       overlay,
