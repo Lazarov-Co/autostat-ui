@@ -1,6 +1,6 @@
 {
   "name": "autostat-ui",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Stylesheets of reusable UI components and utilities for the AutoStat project.",
   "main": "src/main.css",
   "scripts": {
