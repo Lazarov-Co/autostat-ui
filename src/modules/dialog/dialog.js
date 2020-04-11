@@ -3,22 +3,32 @@
   const openDialogTriggers = document.querySelectorAll('.js-open-dialog');
   const closeDialogTriggers = document.querySelectorAll('.js-close-dialog');
 
-  dialogs.forEach(dialog => {
-    const overlay = document.createElement('div');
-    overlay.classList.add('DialogOverlay', 'js-dialog-overlay');
-    overlay.addEventListener('click', () => close(dialog));
-    document.body.prepend(overlay);
-    
-    dialog.autostat_ui = {
-      overlay,
-      close: function() {
-        close(dialog);
-      },
-      open: function() {
-        open(dialog);
+  function init() {
+    dialogs.forEach(dialog => {
+      const overlay = document.createElement('div');
+      overlay.classList.add('DialogOverlay', 'js-dialog-overlay');
+      overlay.addEventListener('click', () => close(dialog));
+      document.body.prepend(overlay);
+      
+      dialog.autostat_ui = {
+        overlay,
+        close: function() {
+          close(dialog);
+        },
+        open: function() {
+          open(dialog);
+        }
       }
-    }
-  });
+    });
+
+    openDialogTriggers.forEach(trigger => {
+      trigger.addEventListener('click', () => openDialogTriggerHandler(trigger));
+    });
+
+    closeDialogTriggers.forEach(trigger => {
+      trigger.addEventListener('click', () => closeDialogTriggerHandler(trigger));
+    });
+  }
 
   function open(dialog) {
     document.body.style.overflow = 'hidden';
@@ -44,11 +54,5 @@
     close(dialog);
   }
 
-  openDialogTriggers.forEach(trigger => {
-    trigger.addEventListener('click', () => openDialogTriggerHandler(trigger));
-  });
-
-  closeDialogTriggers.forEach(trigger => {
-    trigger.addEventListener('click', () => closeDialogTriggerHandler(trigger));
-  });
+  window.addEventListener('load', init);
 })();
