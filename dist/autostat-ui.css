@@ -292,6 +292,18 @@ ul {
       box-shadow: 0 5px 25px rgba(0, 0, 0, 0.21); }
       .Card--active:hover figure img, .Card--active:focus figure img {
         transform: scale(1.1); }
+  .Card table {
+    width: calc(100% + 2em);
+    margin: 0 -1em;
+    border-collapse: collapse;
+    font-size: 16px; }
+    .Card table td {
+      border: 1px solid #e5e5e5;
+      padding: 0.5em 1em; }
+      .Card table td:nth-child(1) {
+        border-left: none; }
+      .Card table td:nth-child(2) {
+        border-right: none; }
 
 .Table {
   width: 100%;
